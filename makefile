@@ -7,7 +7,7 @@ PRGNAME     = vba
 
 # define regarding OS, which compiler to use
 ifeq "$(OSTYPE)" "msys"	
-EXESUFFIX = 
+EXESUFFIX = .elf
 TOOLCHAIN = /usr/
 CC          = gcc
 CCP         = g++
