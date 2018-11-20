@@ -3,12 +3,12 @@ OSTYPE=msys
 #OSTYPE=a320od
 #OSTYPE=gcw0od
 
-PRGNAME     = vba-od
+PRGNAME     = vba
 
 # define regarding OS, which compiler to use
 ifeq "$(OSTYPE)" "msys"	
-EXESUFFIX = .exe
-TOOLCHAIN = /c/MinGW32
+EXESUFFIX = 
+TOOLCHAIN = /usr/
 CC          = gcc
 CCP         = g++
 LD          = g++
@@ -35,7 +35,7 @@ F_OPTS = -fomit-frame-pointer -ffunction-sections -ffast-math -fsingle-precision
 CC_OPTS		= -O2 -DC_CORE -DFINAL_VERSION -DSDL -D_OPENDINGUX_ -D_VIDOD32_ -fpermissive $(F_OPTS)
 CFLAGS      = -I$(SDL_INCLUDE) $(CC_OPTS)
 CXXFLAGS=$(CFLAGS) 
-LDFLAGS     = -L$(SDL_LIB) -lmingw32 -lSDLmain -lSDL -lz -mwindows 
+LDFLAGS     = -L$(SDL_LIB) -lSDLmain -lSDL -lz
 else
 F_OPTS = -fomit-frame-pointer -ffunction-sections -ffast-math -fsingle-precision-constant -fsigned-char 
 ifeq "$(OSTYPE)" "a320od"	

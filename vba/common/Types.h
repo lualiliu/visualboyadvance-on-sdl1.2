@@ -20,7 +20,7 @@
 
 #include <stdint.h>
 
-#define uint unsigned int
+//#define uint unsigned int
 
 typedef uint8_t u8;
 typedef uint16_t u16;

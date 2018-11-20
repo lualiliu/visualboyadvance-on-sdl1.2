@@ -1,6 +1,7 @@
 #include <sys/time.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 #include <SDL/SDL.h>
 
